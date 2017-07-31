@@ -1,0 +1,52 @@
+.review--add{
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.review__header{
+		justify-content: center;
+		background-color: @pink_fef;
+		padding-top: 9px;
+		padding-bottom: 2px;
+		border-bottom: 0.5px solid;
+		border-color: fade( @black, 15% );		
+	}
+	.review__main{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		.input--textarea{
+			flex-grow: 1;
+			margin: 0;
+			height: initial;
+			font-weight: normal;
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			resize: none;
+			border: none;
+		}
+	}
+	.review__content-pic{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.review__details{
+		flex-direction: column;
+	}
+	.review__raiting{
+		display: flex;
+		flex-direction: row;
+		.icon{
+			width: 24px;
+			height: 24px;
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+	}
+}

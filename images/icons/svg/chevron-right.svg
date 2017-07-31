@@ -1,0 +1,44 @@
+<svg width="13" height="21" viewBox="0 0 13 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Back Chevron</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2233 150)">
+<rect x="2233" y="-150" width="13" height="21" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1887 -334L 2262 -334L 2262 333L 1887 333L 1887 -334Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Booking 1" clip-path="url(#clip-0)">
+<path d="M 1887 -334L 2262 -334L 2262 333L 1887 333L 1887 -334Z" fill="#FFFFFF"/>
+<g id="Master">
+<g id="bg" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(1887 -168)" fill="#FFFFFF"/>
+</g>
+<g id="bg" filter="url(#filter1_d)">
+<use xlink:href="#path0_fill" transform="translate(1887 -168)" fill="#FFFFFF"/>
+</g>
+<g id="Back Chevron">
+<use xlink:href="#path1_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 2245.5 -129)" fill="#000000" fill-opacity="0.35"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="1887" y="-168" width="375" height="57" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" filterUnits="userSpaceOnUse" x="1887" y="-169" width="375" height="57" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="-0.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 2.50696e-17L 375 2.50696e-17L 375 56L 0 56L 0 2.50696e-17Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 10.5L 10.5 0L 12.5 2L 4 10.5L 12.5 19L 10.5 21L 0 10.5Z"/>
+</defs>
+</svg>

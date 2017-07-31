@@ -1,0 +1,12 @@
+<svg width="10" height="16" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Lock_Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(121 -811)">
+<g id="Lock_Icon">
+<use xlink:href="#path0_fill" transform="translate(-121 811)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5 10C 4.724 10 4.5 10.224 4.5 10.5L 4.5 12.5C 4.5 12.776 4.724 13 5 13C 5.276 13 5.5 12.776 5.5 12.5L 5.5 10.5C 5.5 10.224 5.276 10 5 10ZM 9 8.00899L 9 4C 9 1.79099 7.20901 0 5 0C 2.79099 0 1 1.79099 1 4L 1 8.00899C 0.37499 8.844 0 9.87699 0 11C 0 13.7615 2.23851 16 5 16C 7.7615 16 10 13.7615 10 11C 10 9.87699 9.62501 8.844 9 8.00899ZM 2 4C 2 2.34301 3.34301 1 5 1C 6.65699 1 8 2.34301 8 4L 8 7.00701C 7.1635 6.37749 6.12699 6 5 6C 3.87299 6 2.83651 6.37749 2 7.00701L 2 4ZM 5 15C 2.79099 15 1 13.209 1 11C 1 8.79099 2.79099 7 5 7C 7.134 7 9 8.866 9 11C 9 13.209 7.20901 15 5 15Z"/>
+</defs>
+</svg>

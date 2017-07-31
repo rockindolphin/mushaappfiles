@@ -1,0 +1,28 @@
+.service{
+	background-color: @white;
+	position: relative;
+	padding-left: 1px*@body-gap;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	&+.service{
+		.service__content{
+			border-top: 0.5px solid;
+			border-color: fade( @black, 15% );
+		}		
+	}
+}
+
+@import '__details/service__details.less';
+@import '__excerpt/service__excerpt.less';
+@import '__discount/service__discount.less';
+@import '__pic/service__pic.less';
+@import '__title/service__title.less';
+@import '__group/service__group.less';
+@import '__check/service__check.less';
+@import '__desc/service__desc.less';
+@import '__content/service__content.less';
+@import '__cost/service__cost.less';
+@import '__duration/service__duration.less';
+@import '__master/service__master.less';

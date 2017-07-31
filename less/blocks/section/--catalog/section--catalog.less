@@ -1,0 +1,24 @@
+.section--catalog{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-left: -4px;
+	margin-right: -4px;
+	width: initial;
+}
+
+@supports ( display: grid ){
+	.section--catalog{
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 1px*@catalog-item-w);
+		grid-gap: 8px;	
+		.catalog__item{
+			margin: 0;
+		}	
+	}
+}

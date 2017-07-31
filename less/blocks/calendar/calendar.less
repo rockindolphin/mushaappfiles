@@ -1,0 +1,15 @@
+.calendar{
+	border-top: 1px solid;
+	border-color: fade( @black, 15% );
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.section--wide{
+	&>.calendar{
+		padding-left: 1px*@body-gap;	
+		padding-right: 1px*@body-gap;	
+	}	
+}
+
+@import '__selected/calendar__selected.less';

@@ -1,0 +1,25 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Checkbox_Active</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1488 -1153)">
+<rect x="1488" y="1153" width="24" height="24" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1472 847L 1847 847L 1847 1721L 1472 1721L 1472 847Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Catalog 2" clip-path="url(#clip-0)">
+<path d="M 1472 847L 1847 847L 1847 1721L 1472 1721L 1472 847Z" fill="#FFFFFF"/>
+<g id="bg3">
+<use xlink:href="#path0_fill" transform="translate(381 847)" fill="#FFFFFF"/>
+</g>
+<g id="Item">
+<g id="Checkbox_Active">
+<use xlink:href="#path1_fill" transform="translate(1488 1153)" fill="#101010"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 2560 0L 2560 869L 0 869L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 24 12C 24 18.6274 18.6274 24 12 24C 5.37256 24 0 18.6274 0 12C 0 5.37256 5.37256 0 12 0C 18.6274 0 24 5.37256 24 12ZM 6.29285 12.2928C 6.68347 11.9023 7.31653 11.9023 7.70715 12.2928L 9.95129 14.5371L 16.2474 7.34155C 16.6111 6.9259 17.2429 6.88379 17.6584 7.24744C 18.0741 7.61108 18.1162 8.24292 17.7526 8.65857L 10.7526 16.6586C 10.3717 17.0939 9.7019 17.1162 9.29285 16.7072L 6.29285 13.7072C 5.90234 13.3167 5.90234 12.6835 6.29285 12.2928Z"/>
+</defs>
+</svg>

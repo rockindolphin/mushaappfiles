@@ -1,0 +1,24 @@
+.service__check{
+	margin-right: 16px;
+	margin-top: 14px;
+	.input--checkbox{
+		display: none;
+		&:checked,
+		&.input--checked{
+			&+.input__checkbox--label{
+				.icon{
+					fill: transparent;
+					color: @black;					
+				}
+			}		
+		}
+	}
+	.input__checkbox--label{
+		display: block;
+		line-height: 0;
+		cursor: pointer;
+		.icon{
+			
+		}
+	}
+}

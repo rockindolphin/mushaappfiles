@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Reviews_Icon_Active</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(758 62)">
+<g id="Reviews_Icon_Active">
+<g id="Subtract">
+<use xlink:href="#path0_fill" transform="translate(-758 -62)" fill="#101010"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 10.5C 0 4.70099 5.37225 0 12 0C 18.6277 0 24 4.70099 24 10.5C 24 16.299 18.6277 21 12 21C 11.2327 21 10.4843 20.9303 9.75677 20.8102L 4.5 24L 4.5 18.6893C 1.75873 16.7647 0 13.8143 0 10.5ZM 13.1226 9.45493L 12 6L 10.8774 9.45493L 7.24469 9.45493L 10.1837 11.5902L 9.0611 15.0451L 12 12.9098L 14.9389 15.0451L 13.8163 11.5902L 16.7553 9.45493L 13.1226 9.45493Z"/>
+</defs>
+</svg>

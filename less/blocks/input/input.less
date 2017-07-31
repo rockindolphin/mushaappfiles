@@ -1,0 +1,42 @@
+.input{
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid;
+	border-color: fade( @black, 50% );
+	display: inline-block;
+	width: 100%;
+	outline: none;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: transparent;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: OpenSans;
+	font-weight: @semibold;
+	font-size: 14px;
+	&::-webkit-input-placeholder,
+	&::-webkit-input-placeholder+*,
+	&::-moz-placeholder,
+	&::-moz-placeholder+*,
+	&:-ms-input-placeholder,
+	&:-ms-input-placeholder+*,
+	&:-moz-placeholder,
+	&:-moz-placeholder+*{
+		font-family: Roboto !important;
+		color: fade( @white, 50% );
+	}	
+	&::-ms-clear { 
+		display: none; 
+	}	
+}
+
+@import '__wrapper/input__wrapper.less';
+@import '__icon/input__icon.less';
+@import '__checkbox--label/input__checkbox--label.less';
+
+@import '--with-icon/input--with-icon.less';
+@import '--checked/input--checked.less';
+@import '--textarea/input--textarea.less';
+@import '--checkbox/input--checkbox.less';
+@import '--date/input--date.less';
+

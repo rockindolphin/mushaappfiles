@@ -1,0 +1,25 @@
+.bar__item{
+	position: relative;
+	.item__badge{
+		font-size: 10px;
+		font-weight: bold;
+		padding: 1px 5px;
+		position: absolute;
+		top: -4px;
+		right: -4px;
+		z-index: 1;	
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+			padding-top: 100%;
+			background-color: @pink_fdd;
+			border-radius: 50%;
+		}
+	}	
+}

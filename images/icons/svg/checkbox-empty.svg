@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Checkbox</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1488 -959)">
+<rect x="1488" y="959" width="24" height="24" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1472 847L 1847 847L 1847 1721L 1472 1721L 1472 847Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Catalog 2" clip-path="url(#clip-0)">
+<path d="M 1472 847L 1847 847L 1847 1721L 1472 1721L 1472 847Z" fill="#FFFFFF"/>
+<g id="bg3">
+<use xlink:href="#path0_fill" transform="translate(381 847)" fill="#FFFFFF"/>
+</g>
+<g id="Item">
+<g id="Checkbox">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(1488 959)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(1488 959)" fill="#101010" fill-opacity="0.75"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 2560 0L 2560 869L 0 869L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 12 24C 18.6274 24 24 18.6274 24 12C 24 5.37258 18.6274 0 12 0C 5.37258 0 0 5.37258 0 12C 0 18.6274 5.37258 24 12 24Z"/>
+<path id="path2_stroke_2x" d="M 12 25C 19.1797 25 25 19.1797 25 12L 23 12C 23 18.0751 18.0751 23 12 23L 12 25ZM 25 12C 25 4.8203 19.1797 -1 12 -1L 12 1C 18.0751 1 23 5.92487 23 12L 25 12ZM 12 -1C 4.8203 -1 -1 4.8203 -1 12L 1 12C 1 5.92487 5.92487 1 12 1L 12 -1ZM -1 12C -1 19.1797 4.8203 25 12 25L 12 23C 5.92487 23 1 18.0751 1 12L -1 12Z"/>
+</defs>
+</svg>

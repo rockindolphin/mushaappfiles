@@ -1,0 +1,33 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Send_Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1396 299)">
+<rect x="1396" y="-299" width="24" height="24" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1057 -334L 1432 -334L 1432 333L 1057 333L 1057 -334Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Add Review" clip-path="url(#clip-0)">
+<path d="M 1057 -334L 1432 -334L 1432 333L 1057 333L 1057 -334Z" fill="#FFFFFF"/>
+<g id="Top block 3">
+<g id="bg" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(1057 -310)" fill="#FFFFFF"/>
+</g>
+<g id="Send_Icon">
+<use xlink:href="#path1_fill" transform="translate(1396 -299)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="1057" y="-310" width="375" height="45" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 0L 375 0L 375 44L 0 44L 0 0Z"/>
+<path id="path1_fill" d="M 23.1934 0.0584204C 22.3285 0.478889 8.40846e-11 11.281 8.40846e-11 11.281C 8.40846e-11 11.281 7.52062 15.8142 7.48175 15.7701C 7.4698 15.7566 11.9708 24 11.9708 24C 11.9708 24 23.7545 1.18068 23.9416 0.806564C 24.1055 0.338955 23.7545 -0.175757 23.1934 0.0584204ZM 2.99273 11.281L 20.2007 3.05111L 8.22993 14.2737C 8.22696 14.27 2.99273 11.281 2.99273 11.281ZM 11.9708 21.0073C 11.9708 21.0073 9.63053 16.5003 8.97812 15.0219L 21.005 3.63393L 11.9708 21.0073Z"/>
+</defs>
+</svg>

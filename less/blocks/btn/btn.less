@@ -1,0 +1,40 @@
+.btn{
+	/* reset */
+	background: transparent;
+	color: inherit;
+	/* cursor: default; */
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-appearance: button; /* for input */
+	-webkit-user-select: none; /* for button */
+	   -moz-user-select: none;
+		-ms-user-select: none;	
+
+	outline: none;		
+	border-radius: @btn-rad*1px;
+	font-family: PlayfairDisplay;
+	font-size: 18px;
+	font-style: italic;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 11px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid;	
+	border-color: transparent;
+	max-width: 100%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@import '--wide/btn--wide.less';
+@import '--black/btn--black.less';
+@import '--pink/btn--pink.less';
+@import '--transparent/btn--transparent.less';
+@import '--clr/btn--clr.less';
