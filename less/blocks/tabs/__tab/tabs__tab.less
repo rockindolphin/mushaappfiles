@@ -1,0 +1,26 @@
+.tabs__tab{
+	width: 100%;
+	.link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		width: 100%;
+		color: fade( @black, 50% );
+		margin: 0;	
+	}
+	&.ui-tabs-active{
+		.link{
+			color: @black;
+			box-shadow: inset 0px -2px 0px @black;		
+		}				
+	}
+	&.ui-state-focus,
+	&.ui-state-active{
+		.link{
+			outline: none;
+		}
+	}	
+}

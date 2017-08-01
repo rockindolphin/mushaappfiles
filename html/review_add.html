@@ -3,78 +3,73 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Booking 2</title>
+	<title>Add_review</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="page" data-role="page" id="booking2">
+	<div class="page" data-role="page" id="review_add">
 		<header class="header page__header" data-role="header">
 			<div class="page__wrapper">
 				<div class="bar header__bar">
 					<a href="#" class="link" data-rel="back">
 						<svg class="icon icon--active icon--chevron-left">
 							<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
-						</svg>								
+						</svg>					
 					</a>
 					<span class="page__title">
-						15 июля, в 16:00
+						Мой отзыв
 					</span>
-					<span>&nbsp;</span>
+					<button class="btn--clr">
+						<svg class="icon icon--send">
+							<use xlink:href="images/icons/svg/sprite.svg#send"></use>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
 		<main class="main page__main ui-content">
 			<div class="main__wrapper scroll--hidden">
 				<div class="page__wrapper">
-					<section class="section section--wide section--booking">
-						<div class="service">
-							<div class="service__check">
-								<input type="checkbox" id="service1" class="input--checkbox" checked>
-								<label for="service1" class="input__checkbox--label">
-									<svg class="icon icon--check">
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#check"></use>
-									</svg>																			
-								</label>
-							</div>
-							<div class="service__content">
-								<div class="service__desc">
-									<div class="service__title">
-										Стрижка мужская классическая
+					<section class="section section--wide section--review-add">
+						<div class="review review--add">
+							<header class="review__header">
+								<div class="review__details">
+									<div class="review__raiting">
+										<button class="btn--clr">
+											<svg class="icon icon--active icon--star">
+												<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+											</svg>												
+										</button>
+										<button class="btn--clr">
+											<svg class="icon icon--active icon--star">
+												<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+											</svg>												
+										</button>									
+										<button class="btn--clr">
+											<svg class="icon icon--star">
+												<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+											</svg>											
+										</button>									
+										<button class="btn--clr">
+											<svg class="icon icon--star">
+												<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+											</svg>											
+										</button>										
+										<button class="btn--clr">
+											<svg class="icon icon--star">
+												<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+											</svg>																					
+										</button>										
 									</div>
-									<div class="service__excerpt">
-										Оригинальная форма, подчеркивает индивидуальность
-									</div>
-								</div>
-								<div class="service__details">
-									<div class="service__cost">
-										800 Р
-									</div>
-									<div class="service__duration">
-										<span>
-											30 мин
-										</span>
-										<svg class="icon icon--clock">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#clock"></use>
-										</svg>	
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="service__master">
-							<div class="user">
-								<div class="user__avatar">
-									<img src="images/avatar.jpg" alt="">
-								</div>
-								<div class="user__details">
-									<span class="user__role">
-										Парикмахер
-									</span>									
-									<span class="user__name">
-										Анастасия Воронина
+									<span class="review__subtitle">
+										Оцените										
 									</span>
 								</div>
-							</div>											
-						</div>
+							</header>
+							<main class="review__main">					
+								<textarea class="input input--textarea" placeholder="Что бы вы посоветовали? &#10;Что вам понравилось?"></textarea>
+							</main>
+						</div>													
 					</section>			
 				</div>
 			</div>
@@ -121,7 +116,7 @@
 					</a>			
 				</div>				
 			</div>
-		</footer>		
+		</footer>			
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>

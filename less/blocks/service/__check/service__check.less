@@ -17,8 +17,25 @@
 		display: block;
 		line-height: 0;
 		cursor: pointer;
-		.icon{
+	}
+	.ui-checkbox{
+		margin: 0;
+		.input--checkbox{
 			
+		}
+		.input__checkbox--label{
+			&.ui-btn-icon-left{
+				padding: 0;
+			}
+			&.ui-checkbox-on{
+				.icon{
+					fill: transparent;
+					color: @black;					
+				}
+			}
+			&:after{
+				display: none;
+			}
 		}
 	}
 }

@@ -9,6 +9,22 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	background-color: @pink_fae;
+}
+
+.ui-page-theme-b,
+.ui-group-theme-b{
+	color: @white;
+	.input{
+		border-color: fade( @white, 50% );		
+	}
+	.section__desc{
+		color: fade( @white, 75% );
+	}
+	.btn--transparent{
+		color: @white;		
+		border-color: fade( @white, 75% );		
+	}		
 }
 
 
@@ -19,5 +35,7 @@
 @import '__footer/page__footer.less';
 @import '__title/page__title.less';
 @import '__subtitle/page__subtitle.less';
+
+@import '--light/page--light.less';
 
 
