@@ -1,0 +1,51 @@
+	<header class="header page__header header--open">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn--clr" ng-click="back()">
+					<svg class="icon icon--menu-close">
+						<use xlink:href="images/icons/svg/sprite.svg#menu-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="header__wrapper scroll--hidden">
+			<div class="page__wrapper">
+				<section class="section--wide">
+					<ul class="menu">
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/front')">
+								О салоне
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/reviews')">
+								Отзывы
+							</a>
+						</li>
+						<li class="menu__item item--active">
+							<a href class="link">
+								Клуб Муша
+							</a>
+						</li>
+					</ul>
+					<ul class="menu">
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/booking')">
+								Записаться
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/backcall')">
+								Обратный звонок
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</header>

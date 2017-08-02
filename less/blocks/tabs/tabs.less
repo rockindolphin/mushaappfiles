@@ -1,36 +1,15 @@
 .tabs{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	justify-content: flex-start;
-	font-size: 14px;
-	.input--checkbox{
-		display: none;
-		&:checked,
-		&.input--checked{
-			&+.input__checkbox--label{
-				color: @black;
-				box-shadow: inset 0px -2px 0px @black;
-			}
-		}
-	}
-	.input__checkbox--label{
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		flex-grow: 1;
-		padding-top: 14px;
-		padding-bottom: 14px;
-		width: 100%;
-		color: fade( @black, 50% );
-	}
+
 }
 
 .page__wrapper{
-	.tabs{
+	&>.tabs{
 		margin-left: -1px*@body-gap;
 		margin-right: -1px*@body-gap;		
 	}
 }
+
+@import '__tab/tabs__tab.less';
+@import '__list/tabs__list.less';
+@import '__bar/tabs__bar.less';
+

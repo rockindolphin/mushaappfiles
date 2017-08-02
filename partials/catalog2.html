@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Catalog 2</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="page">
 	<header class="header page__header">
 		<div class="page__wrapper">
 			<div class="bar header__bar">
-				<button class="btn--clr">
+				<button class="btn--clr" ng-click="back()">
 					<svg class="icon icon--active icon--chevron-left">
 						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
 					</svg>
@@ -33,7 +24,7 @@
 						<div class="group__title">
 							Мужские стрижки
 						</div>
-						<div class="service">
+						<div class="service" ng-click="go('/booking')">
 							<div class="service__check">
 								<input type="checkbox" id="service1" class="input--checkbox">
 								<label for="service1" class="input__checkbox--label">
@@ -66,7 +57,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="service">
+						<div class="service" ng-click="go('/booking')">
 							<div class="service__check">
 								<input type="checkbox" id="service2" class="input--checkbox">
 								<label for="service2" class="input__checkbox--label">
@@ -99,7 +90,7 @@
 								</div>
 							</div>
 						</div>	
-						<div class="service">
+						<div class="service" ng-click="go('/booking')">
 							<div class="service__check">
 								<input type="checkbox" id="service3" class="input--checkbox">
 								<label for="service3" class="input__checkbox--label">
@@ -309,49 +300,6 @@
 	</main>
 	<footer class="footer page__footer">
 		<div class="page__wrapper">		
-			<div class="bar footer__bar">
-				<a href="#" class="link bar__item">
-					<span class="icon__wrapper">
-						<svg class="icon icon--notification">
-							<use xlink:href="images/icons/svg/sprite.svg#notification"></use>
-						</svg>						
-						<span class="item__badge">
-							<span>2</span>
-						</span>
-					</span>
-					<span>
-						Уведомления
-					</span>
-				</a>			
-				<a href="#" class="link bar__item">
-					<svg class="icon icon--active icon--booking">
-						<use xlink:href="images/icons/svg/sprite.svg#booking"></use>
-					</svg>					
-					<span>
-						Записаться
-					</span>
-				</a>			
-				<a href="#" class="link bar__item">
-					<svg class="icon icon--backcall">
-						<use xlink:href="images/icons/svg/sprite.svg#backcall"></use>
-					</svg>
-					<span>
-						Обратный звонок
-					</span>
-				</a>			
-				<a href="#" class="link bar__item">
-					<svg class="icon icon--reviews">
-						<use xlink:href="images/icons/svg/sprite.svg#reviews"></use>
-					</svg>				
-					<span>
-						Отзывы
-					</span>
-				</a>			
-			</div>
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
 		</div>
-	</footer>		
-	<script src="js/jquery.min.js"></script>
-	<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
-	<script src="js/main.js"></script>
-</body>
-</html>
+	</footer>	
