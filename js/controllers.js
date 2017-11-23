@@ -96,52 +96,63 @@ angular.module('myApp.controllers', [])
 			});	
 
 		}])
-		.controller('CalendarCtrl', ['$scope', '$swipe', function ($scope, $swipe ) {
+		.controller('PickadateCtrl', ['$scope', '$element', function ($scope, $element) {
 
-			$.datetimepicker.setLocale('ru');
-			moment.locale('ru');
-
-			var input = $('input[data-role="date"]');
 			var selected = document.createElement('div');
-			$(selected).addClass('calendar__selected');
-			$(input).before( selected );
-			$(input).datetimepicker({
-				format: 'd.m.Y H:i',
-				inline: true,
-				lang: 'ru',
-				startDate: new Date(),
-				timepickerScrollbar: false,
-				scrollTime: false,
-				scrollMonth: false,
-				todayButton: false,
-				dayOfWeekStart: 1,
-				allowTimes:[
-					'10:00', '11:00', '12:00', '13:00', 
-					'14:00', '15:00', '16:00', '17:00', 
-					'18:00', '20:00', '21:00', '21:00'
-				],
-				onGenerate: function(ct,$input){
-					$(selected).html( moment(ct).format('dddd, DD MMM') );		
-				},
-				onSelectDate:function(ct,$i){
-					$(selected).html( moment(ct).format('dddd, DD MMM') );
-				}										
+			$(selected).addClass('picker__selected');
+			$( $element ).find('[data-role=date]').pickadate({
+				monthsFull: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
+				monthsShort: ['янв', 'февр', 'март', 'апр', 'май', 'июнь', 'июль', 'авг', 'сент', 'окт', 'нояб', 'дек'],
+				weekdaysFull: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+				weekdaysShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],				
+				today: 'сегодня',
+				clear: 'очистить',
+				close: 'закрыть',					
+				closeOnSelect: false,
+				closeOnClear: false,
+				firstDay: 1,
+				format: 'dddd, dd mmm',
+				onStart: function() {
+					this.open();
+					this.set('select', new Date());
+					$(this.$node).hide();
+					$(selected).text( $(this.$node).val() );
+					$(this.$holder).parent().prepend(selected);
+				},	
+				onSet: function(thingSet) {
+					$(selected).text( $(this.$node).val() );
+				}							
 			});	
-
-			var directionX = 0;
-			$swipe.bind( $('.xdsoft_datetimepicker'), {'start': function(e){
-				directionX = e.x;
-				console.log(directionX);
-			}});
-			$swipe.bind( $('.xdsoft_datetimepicker'), {'start': function(e){
-				console.log(directionX);
-				directionX-= e.x;
-				if( directionX < 0 ){
-					console.log('left');
-				}else if( directionX > 0 ){
-					console.log('right');
-				}
-				directionX = 0;
-			}});			
+	
+			$( $element ).find('[data-role=time]').pickatime({
+				monthsFull: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
+				monthsShort: ['янв', 'февр', 'март', 'апр', 'май', 'июнь', 'июль', 'авг', 'сент', 'окт', 'нояб', 'дек'],
+				weekdaysFull: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+				weekdaysShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],				
+				today: 'сегодня',
+				clear: 'очистить',
+				close: 'закрыть',				
+				formatLabel: 'HH:i',
+				disable: [
+					true,
+					[10,0],
+					[11,0],
+					[12,0],
+					[13,0], 
+					[14,0],
+					[15,0],
+					[16,0],
+					[17,0], 
+					[18,0],
+					[19,0],
+					[20,0],
+					[21,0]
+				],				
+				onStart: function() {
+					this.open();
+					$(this.$node).hide();
+				},				
+			});	
+	
 
 		}]);

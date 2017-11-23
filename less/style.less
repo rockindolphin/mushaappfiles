@@ -35,11 +35,8 @@
 /* VENDORS */
 @import 'vendor/normalize.less';
 @import 'vendor/swiper.less';
-@import 'vendor/jquery.datetimepicker.less';
+@import 'vendor/pickadate.less';
 
-
-/* REDEFINE */
-@import 'redefine/jquery.datetimepicker.less';
 
 
 /* BLOCKS */
@@ -68,6 +65,7 @@
 @import 'blocks/form/form.less';
 @import 'blocks/calendar/calendar.less';
 @import 'blocks/tab/tab.less';
+@import 'blocks/error/error.less';
 
 
 
@@ -131,10 +129,18 @@ h6{
 
 
 
-
-
-body{
+html {
+	position: fixed;
+	height: 100%;
 	overflow: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 .slide-left.ng-enter,
@@ -182,4 +188,20 @@ body{
 
 .slide-right.ng-leave.ng-leave-active {
 	transform: translateX(100%);
+}
+
+.loading { 
+    background-image: url(../images/loading.gif); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 25px; 
+    min-height: 50px;
+}
+
+.loading > * { 
+    opacity: 0.2; 
+}
+
+.ios { 
+    padding-top: 20px;  
 }

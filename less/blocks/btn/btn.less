@@ -17,8 +17,8 @@
 	font-family: PlayfairDisplay;
 	font-size: 18px;
 	font-style: italic;
-	display: inline-block;
-	padding: 11px;
+	/*display: inline-block;*/
+	padding: 11px 22px;
 	text-align: center;
 	cursor: pointer;
 	border: 1px solid;	
@@ -31,8 +31,12 @@
 	text-overflow: ellipsis;
 }
 
-@import '--wide/btn--wide.less';
-@import '--black/btn--black.less';
-@import '--pink/btn--pink.less';
-@import '--transparent/btn--transparent.less';
-@import '--clr/btn--clr.less';
+.btn:disabled {
+    opacity: 0.3;
+}
+
+@import '__wide/btn__wide.less';
+@import '__black/btn__black.less';
+@import '__pink/btn__pink.less';
+@import '__transparent/btn__transparent.less';
+@import '__clr/btn__clr.less';

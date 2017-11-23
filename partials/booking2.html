@@ -1,7 +1,7 @@
 	<header class="header page__header">
 		<div class="page__wrapper">
 			<div class="bar header__bar">
-				<button class="btn--clr" ng-click="back()">
+				<button class="btn__clr" ng-click="back()">
 					<svg class="icon icon--active icon--chevron-left">
 						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
 					</svg>			
@@ -9,7 +9,9 @@
 				<span class="page__title">
 					15 июля, в 16:00
 				</span>
-				<span>&nbsp;</span>
+				<button class="btn__clr" disabled>
+					<span>&nbsp;</span>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -19,7 +21,7 @@
 				<section class="section section--wide section--booking">
 					<div class="service">
 						<div class="service__check">
-							<input type="checkbox" id="service1" class="input--checkbox" checked>
+							<!--<input type="checkbox" id="service1" class="input--checkbox" checked>-->
 							<label for="service1" class="input__checkbox--label">
 								<svg class="icon icon--check">
 									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#check"></use>

@@ -1,7 +1,7 @@
 	<header class="header page__header">
 		<div class="page__wrapper">
 			<div class="bar header__bar">
-				<button class="btn--clr" ng-click="back()">
+				<button class="btn__clr" ng-click="back()">
 					<svg class="icon icon--active icon--chevron-left">
 						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
 					</svg>			
@@ -9,7 +9,9 @@
 				<span class="page__title">
 					Запись-онлайн
 				</span>
-				<span>&nbsp;</span>
+				<button class="btn__clr" disabled>
+					<span>&nbsp;</span>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -19,7 +21,7 @@
 				<section class="section section--wide section--booking">
 					<div class="service">
 						<div class="service__check">
-							<input type="checkbox" id="service1" class="input--checkbox" checked>
+							<!--<input type="checkbox" id="service1" class="input--checkbox" checked>-->
 							<label for="service1" class="input__checkbox--label">
 								<svg class="icon icon--check">
 									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#check"></use>
@@ -64,14 +66,17 @@
 								</span>
 							</div>
 						</div>					
-						<button class="btn--clr">
+						<button class="btn__clr">
 							<svg class="icon icon--chevron-right">
 								<use xlink:href="images/icons/svg/sprite.svg#chevron-right"></use>
 							</svg>			
 						</button>						
 					</div>
-					<div class="calendar" ng-controller="CalendarCtrl">
-						<input type="date" data-role="date" class="input--date">										
+					<div ng-controller="PickadateCtrl" class="picker__container">
+						<input type="date" data-role="date">
+					</div>
+					<div ng-controller="PickadateCtrl" class="picker__container">
+						<input type="time" data-role="time">
 					</div>
 				</section>			
 			</div>
@@ -79,7 +84,7 @@
 	</main>
 	<footer class="footer page__footer">
 		<div class="page__wrapper">
-			<button class="btn btn--pink btn--wide" ng-click="go('/booking2')">
+			<button class="btn btn__pink btn__wide" ng-click="go('/booking2')">
 				Записаться
 			</button>				
 			<ng-include src="'partials/footer__bar.html'"></ng-include>
