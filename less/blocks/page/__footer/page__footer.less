@@ -2,10 +2,12 @@
 	position: relative;
 	z-index: 4;
 	width: 100%;
-	box-shadow: 0 -1px 0 fade( @black, 15% );
+	border-top: 1px solid;
+	border-color: fade( @black, 15% );
 	flex-shrink: 0;
 	.bar{
 		min-height: 48px;
+		justify-content: space-around;
 	}
 	&>.page__wrapper{
 		&>.btn{

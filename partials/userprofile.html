@@ -1,0 +1,196 @@
+	<header class="header page__header">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--chevron-left">
+						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
+					</svg>
+				</button>
+				<span class="page__title">
+					Профиль
+				</span>
+				<button class="btn__clr">
+					<svg class="icon icon--active icon--extra">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#extra"></use>
+					</svg>					
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="main page__main">
+		<div class="main__wrapper scroll--hidden">
+			<div class="page__wrapper">
+				<section class="section section--wide">	
+					<div class="profile profile--preview">
+						<div class="user">
+							<div class="user__avatar">
+								<img src="images/avatar3.jpg" alt="" data-bg="true">
+							</div>																		
+							<div class="user__details">
+								<div class="user__status">
+									Beauty&nbsp;<b>Start</b>
+								</div>
+								<span class="user__name">
+									Марина Ольгина
+								</span>
+							</div>	
+						</div>				
+					</div>
+					<div class="tabs" ng-controller="TabController">
+						<nav class="tabs__bar">
+							<ul class="tabs__list">
+								<li ng-class="{ 'tab--active': isSet(1) }" class="tabs__tab">
+									<a href ng-click="setTab(1)" class="link">
+										Записи
+									</a>
+								</li>
+								<li ng-class="{ 'tab--active': isSet(2) }" class="tabs__tab">
+									<a href ng-click="setTab(2)" class="link">
+										Отзывы
+									</a>
+								</li>
+							</ul>				
+						</nav>
+					</div>
+					<div class="page__wrapper" ng-controller="TabController">
+						<div ng-show="isSet(1)">
+							<section class="section section--reviews">
+								<div class="review">
+									<header class="review__header">
+										<div class="user">
+											<div class="user__avatar">
+												<img src="images/avatar3.jpg" alt="" data-bg="true">
+											</div>
+											<div class="user__details">
+												<span class="user__name">
+													Марина О.
+												</span>
+												<div class="review__details">
+													<div class="review__raiting">
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+													</div>
+													<div class="review__date">
+														12 июня
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="review__menu">
+											<button class="btn__clr">
+												<svg class="icon icon--extra">
+													<use xlink:href="images/icons/svg/sprite.svg#extra"></use>
+												</svg>																											
+											</button>
+										</div>
+									</header>
+									<main class="review__main">
+										<p>
+											Огромное спасибо волшебникам из салона. Пришла в плохом настроении, голова болела, ноги еле передвигала: метеозависимость, депрессия и т.д. Благодаря умным и профессиональным рукам мастера просто возродилась! Как феникс из пепла!
+										</p>							
+									</main>
+									<footer class="review__footer">
+										<span class="review__count">
+											1 комментарий
+										</span>
+									</footer>
+								</div>
+								<div class="review">
+									<header class="review__header">
+										<div class="user">
+											<div class="user__avatar">
+												<img src="images/avatar3.jpg" alt="" data-bg="true">
+											</div>
+											<div class="user__details">
+												<span class="user__name">
+													Марина О.
+												</span>
+												<div class="review__details">
+													<div class="review__raiting">
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+														<svg class="icon icon--active icon--star">
+															<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+														</svg>											
+													</div>
+													<div class="review__date">
+														12 июня
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="review__menu">
+											<button class="btn__clr">
+												<svg class="icon icon--extra">
+													<use xlink:href="images/icons/svg/sprite.svg#extra"></use>
+												</svg>																											
+											</button>
+										</div>
+									</header>
+									<main class="review__main">
+										<p>
+											Огромное спасибо волшебникам из салона. Пришла в плохом настроении, голова болела, ноги еле передвигала: метеозависимость, депрессия и т.д. Благодаря умным и профессиональным рукам мастера просто возродилась! Как феникс из пепла!
+										</p>							
+									</main>
+									<footer class="review__footer">
+										<span class="review__count">
+											1 комментарий
+										</span>
+									</footer>
+								</div>										
+							</section>						
+						</div>
+						<div ng-show="isSet(2)">
+							tab2
+						</div>
+					</div>							
+				</section>			
+			</div>
+		</div>
+	</main>
+	<footer class="footer page__footer">
+		<div class="page__wrapper">		
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
+		</div>
+	</footer>
+	<div ng-class="{'popup': true, 'popup--context-menu': true, 'popup--open': popup.isVisible }" ng-controller="PopupCtrl">
+		<div class="popup__box">
+			<ul class="menu menu--context">
+				<li class="menu__item">
+					Опубликовать
+				</li>
+				<li class="menu__item">
+					Комментировать
+				</li>
+				<li class="menu__item">
+					Удалить
+				</li>
+				<li class="menu__item item--active">
+					Отмена
+				</li>
+			</ul>
+		</div>
+	</div>

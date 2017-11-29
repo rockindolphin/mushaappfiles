@@ -10,7 +10,7 @@
 					Мой отзыв
 				</span>
 				<button class="btn__clr">
-					<svg class="icon icon--send">
+					<svg class="icon icon--active icon--send">
 						<use xlink:href="images/icons/svg/sprite.svg#send"></use>
 					</svg>
 				</button>
@@ -19,7 +19,7 @@
 	</header>
 	<main class="main page__main">
 		<div class="main__wrapper scroll--hidden">
-			<div class="page__wrapper">
+			<div class="page__wrapper page__wrapper--md">
 				<section class="section section--wide section--review-add">
 					<div class="review review--add">
 						<header class="review__header">
@@ -58,20 +58,57 @@
 						</header>
 						<main class="review__main">					
 							<textarea class="input input--textarea" placeholder="Что бы вы посоветовали? &#10;Что вам понравилось?"></textarea>
+							<div class="attach">
+								<div class="bar attach__bar">
+									<div class="attach__item">
+										<div class="item__pic">
+											<img src="images/attach-pic-1.jpg" alt="" data-bg="true">	
+										</div>
+										<button class="btn btn__clr item__remove">
+											<svg class="icon icon--active icon--close2">
+												<use xlink:href="images/icons/svg/sprite.svg#close2"></use>
+											</svg>												
+										</button>	
+									</div>
+									<div class="attach__item">
+										<div class="item__pic">
+											<img src="images/attach-pic-2.jpg" alt="" data-bg="true">	
+										</div>
+										<button class="btn btn__clr item__remove">
+											<svg class="icon icon--active icon--close2">
+												<use xlink:href="images/icons/svg/sprite.svg#close2"></use>
+											</svg>												
+										</button>	
+									</div>	
+									<div class="attach__item">
+										<div class="item__pic">
+											<img src="images/attach-pic-3.jpg" alt="" data-bg="true">	
+										</div>
+										<button class="btn btn__clr item__remove">
+											<svg class="icon icon--active icon--close2">
+												<use xlink:href="images/icons/svg/sprite.svg#close2"></use>
+											</svg>												
+										</button>	
+									</div>																												
+								</div>
+							</div>
 						</main>
 					</div>													
 				</section>			
 			</div>
 		</div>
 	</main>
-	<footer class="footer page__footer">
-		<div class="page__wrapper">		
+	<footer class="footer page__footer footer--actions">
+		<div class="page__wrapper page__wrapper--md">		
 			<div class="bar footer__bar">				
 				<button class="btn__clr">
-					<svg class="icon icon--photo">
+					<svg class="icon icon--active icon--photo">
 						<use xlink:href="images/icons/svg/sprite.svg#photo"></use>
 					</svg>				
-				</button>						
+				</button>
+				<button class="btn__clr bar__item">
+					Отправить					
+				</button>
 			</div>		
 		</div>
 	</footer>

@@ -1,0 +1,229 @@
+	<header class="header page__header">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--chevron-left">
+						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
+					</svg>
+				</button>
+				<span class="page__title">
+					Мой профиль
+				</span>
+				<button class="btn__clr" ng-click="go('myprofile_edit')">
+					<svg class="icon icon--active icon--profile-edit">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#profile-edit"></use>
+					</svg>					
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="main page__main">
+		<div class="main__wrapper scroll--hidden">
+			<div class="page__wrapper page__wrapper--md">
+				<section class="section section--wide">	
+					<div class="profile">
+						<div class="user">
+							<div class="user__avatar">
+								<img src="images/avatar3.jpg" alt="" data-bg="true">
+							</div>
+							<div class="user__details">
+								<div class="user__status">
+									Beauty&nbsp;<b>Start</b>
+								</div>
+								<span class="user__name">
+									Марина Ольгина
+								</span>
+							</div>								
+						</div>
+					</div>
+					<div class="tabs" ng-controller="TabController">
+						<nav class="tabs__bar">
+							<ul class="tabs__list">
+								<li ng-class="{ 'tab--active': isSet(1) }" class="tabs__tab">
+									<a href ng-click="setTab(1)" class="link">
+										Мои записи
+									</a>
+								</li>
+								<li ng-class="{ 'tab--active': isSet(2) }" class="tabs__tab">
+									<a href ng-click="setTab(2)" class="link">
+										Мои отзывы
+									</a>
+								</li>
+							</ul>				
+						</nav>
+					</div>
+					<div class="page__wrapper page__wrapper--wide" ng-controller="TabController">
+						<div ng-show="isSet(1)">
+							<div class="service__group">
+								<div class="group__title">
+									Предстоящие
+								</div>
+								<div class="booking">
+									<div class="booking__data">
+										<div class="booking__desc">
+											<svg class="icon icon--active icon--calendar">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#calendar"></use>
+											</svg>
+											<span class="booking__date">
+												25 сентября, в 12:30																						
+											</span>
+										</div>
+									</div>
+									<div class="booking__services">
+										<div class="service service">
+											<div class="service__content">
+												<div class="service__desc">
+													<div class="service__title">
+														Стрижка мужская классическая
+													</div>
+													<div class="service__excerpt">
+														Оригинальная форма, подчеркивает индивидуальность
+													</div>
+												</div>
+												<div class="service__details">
+													<div class="service__cost">
+														800 Р
+													</div>
+													<div class="service__duration">
+														<span>
+															30 мин
+														</span>
+														<svg class="icon icon--clock">
+															<use xlink:href="images/icons/svg/sprite.svg#clock"></use>
+														</svg>	
+													</div>
+												</div>
+											</div>
+										</div>					
+									</div>									
+								</div>							
+							</div>
+							<div class="service__group">
+								<div class="group__title">
+									Завершенные
+								</div>
+								<div class="booking booking--disabled">
+									<div class="booking__data">
+										<div class="booking__desc">
+											<svg class="icon icon--calendar">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#calendar"></use>
+											</svg>
+											<span class="booking__date">
+												25 сентября, в 12:30																						
+											</span>
+										</div>
+									</div>
+									<div class="booking__services">
+										<div class="service service--disabled">
+											<div class="service__content">
+												<div class="service__desc">
+													<div class="service__title">
+														Стрижка мужская классическая
+													</div>
+													<div class="service__excerpt">
+														Оригинальная форма, подчеркивает индивидуальность
+													</div>
+												</div>
+												<div class="service__details">
+													<div class="service__cost">
+														800 Р
+													</div>
+													<div class="service__duration">
+														<span>
+															30 мин
+														</span>
+														<svg class="icon icon--clock">
+															<use xlink:href="images/icons/svg/sprite.svg#clock"></use>
+														</svg>	
+													</div>
+												</div>
+											</div>
+										</div>					
+									</div>
+								</div>	
+								<div class="booking booking--disabled">
+									<div class="booking__data">
+										<div class="booking__desc">
+											<svg class="icon icon--calendar">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#calendar"></use>
+											</svg>
+											<span class="booking__date">
+												25 сентября, в 12:30																						
+											</span>
+										</div>
+										<div class="booking__actions">
+											<button class="btn__clr">
+												<svg class="icon icon--active icon--review-add">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#review-add"></use>
+												</svg>					
+											</button>											
+										</div>
+									</div>
+									<div class="booking__services">
+										<div class="service service--disabled">
+											<div class="service__content">
+												<div class="service__desc">
+													<div class="service__title">
+														Стрижка мужская классическая
+													</div>
+													<div class="service__excerpt">
+														Оригинальная форма, подчеркивает индивидуальность
+													</div>
+												</div>
+												<div class="service__details">
+													<div class="service__cost">
+														800 Р
+													</div>
+													<div class="service__duration">
+														<span>
+															30 мин
+														</span>
+														<svg class="icon icon--clock">
+															<use xlink:href="images/icons/svg/sprite.svg#clock"></use>
+														</svg>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="service service--disabled">
+											<div class="service__content">
+												<div class="service__desc">
+													<div class="service__title">
+														Стрижка мужская классическая
+													</div>
+													<div class="service__excerpt">
+														Оригинальная форма, подчеркивает индивидуальность
+													</div>
+												</div>
+												<div class="service__details">
+													<div class="service__cost">
+														800 Р
+													</div>
+													<div class="service__duration">
+														<span>
+															30 мин
+														</span>
+														<svg class="icon icon--clock">
+															<use xlink:href="images/icons/svg/sprite.svg#clock"></use>
+														</svg>	
+													</div>
+												</div>
+											</div>
+										</div>															
+									</div>
+								</div>																									
+							</div>							
+						</div>
+						<div ng-show="isSet(2)">
+							tab2
+						</div>
+					</div>															
+				</section>			
+			</div>
+		</div>
+	</main>
+	<footer class="footer page__footer">
+		<div class="page__wrapper">
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
+		</div>
+	</footer>

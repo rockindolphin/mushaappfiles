@@ -1,0 +1,29 @@
+.menu--context{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	.menu__item{
+		font-weight: @semibold;
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 6px;
+		padding-right: 6px;
+		&:not(:last-child){
+			border-bottom: 1px solid;
+			border-color: fade(@black,15%);
+		}
+		&:hover,
+		&.item--hover,
+		&:active,
+		&.item--active{
+			background-color: @pink_fdd;
+		}		
+	}
+}

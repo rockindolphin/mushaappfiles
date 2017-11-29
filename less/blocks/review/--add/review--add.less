@@ -12,7 +12,7 @@
 		background-color: @pink_fef;
 		padding-top: 9px;
 		padding-bottom: 2px;
-		border-bottom: 0.5px solid;
+		border-bottom: 1px solid;
 		border-color: fade( @black, 15% );		
 	}
 	.review__main{
@@ -24,17 +24,13 @@
 			margin: 0;
 			height: initial;
 			font-weight: normal;
-			padding-left: 16px;
-			padding-right: 16px;
+			padding-left: 1px*@body-gap;
+			padding-right: 1px*@body-gap;
 			padding-top: 12px;
 			padding-bottom: 12px;
 			resize: none;
 			border: none;
 		}
-	}
-	.review__content-pic{
-		margin-left: 0;
-		margin-right: 0;
 	}
 	.review__details{
 		flex-direction: column;
@@ -46,8 +42,6 @@
 		.icon{
 			width: 24px;
 			height: 24px;
-			/*margin-left: 2px;
-			margin-right: 2px;*/
 		}
 	}
 }

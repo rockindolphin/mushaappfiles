@@ -5,6 +5,7 @@ angular.module('myApp', [
 	'ngRoute',
 	'ngAnimate',
 	'myApp.controllers',
+	'yaMap',
 ]).
 config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/backcall', {templateUrl: 'partials/backcall.html' });
@@ -19,5 +20,11 @@ config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/review_add', {templateUrl: 'partials/review_add.html' });
 	$routeProvider.when('/review_open', {templateUrl: 'partials/review_open.html' });
 	$routeProvider.when('/reviews', {templateUrl: 'partials/reviews.html' });
+	$routeProvider.when('/myprofile', {templateUrl: 'partials/myprofile.html' });
+	$routeProvider.when('/myprofile_edit', {templateUrl: 'partials/myprofile_edit.html' });
+	$routeProvider.when('/userprofile', {templateUrl: 'partials/userprofile.html' });
+	$routeProvider.when('/about', {templateUrl: 'partials/about.html' });
+	$routeProvider.when('/beautyclub', {templateUrl: 'partials/beautyclub.html' });
+	$routeProvider.when('/contacts', {templateUrl: 'partials/contacts.html' });
 	$routeProvider.otherwise({redirectTo: '/front'});
 }]);

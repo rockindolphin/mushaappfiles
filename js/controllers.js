@@ -41,8 +41,7 @@ angular.module('myApp.controllers', [])
 						$(this).css('opacity', 0);
 					}); 
 
-				});
-
+				});				
 
 		}])
 		.service('TabDataService',function(){
@@ -96,6 +95,22 @@ angular.module('myApp.controllers', [])
 			});	
 
 		}])
+		.controller('ReviewSliderCtrl', ['$scope', function ($scope ) {
+			var slider = new Swiper('.swiper-container', {
+				direction: 'horizontal',
+				loop: false,
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				preventClicks: false,				
+				onInit: function(swiper){
+					$(swiper.container).on('mousedown touchstart',function(e){
+						e.stopPropagation();
+					});										
+				},
+			});	
+		}])		
 		.controller('PickadateCtrl', ['$scope', '$element', function ($scope, $element) {
 
 			var selected = document.createElement('div');
@@ -155,4 +170,53 @@ angular.module('myApp.controllers', [])
 			});	
 	
 
-		}]);
+		}])
+		.controller('PopupCtrl', ['$scope', '$element', function ($scope, $element ) {
+			
+			$scope.popup = { isVisible: true };
+			
+			$($element).click(function(evt){
+				if( evt.target === this ){
+					$scope.$apply(function(){
+						$scope.popup.isVisible = false;
+					});					
+				}
+			});
+
+		}])
+		.controller('contactsCtrl', ['$scope', '$element', function ($scope, $element ) {
+				
+			$scope.geoObjects=[
+			        {
+			            geometry: {
+			                type: "Point",
+			                coordinates: [36.875160, 55.914453]
+			            }
+			        },
+			];
+
+			var headerHeight = $('.page__header').outerHeight();
+			var map = { 
+				isVisible: false,
+				visibleTop: $('#scrollMap').parent().parent().offset().top - headerHeight,
+				hiddenTop: 0
+			}
+
+			$('#scrollMap').click(function(){
+				var transform = map.isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+				$(this).css('transform',transform);
+
+				headerHeight = $('.page__header').outerHeight();
+				map.visibleTop = $('#scrollMap').parent().parent().offset().top - headerHeight;
+				var scrollPoint = map.isVisible ?  map.hiddenTop : map.visibleTop;
+				$('.main__wrapper').animate({
+					scrollTop: scrollPoint
+				}, 800);
+				map.isVisible = !map.isVisible;
+			});
+
+			$($element).find('ya-map').on('mousedown touchstart',function(e){
+				e.stopPropagation();
+			});			
+
+		}]);		

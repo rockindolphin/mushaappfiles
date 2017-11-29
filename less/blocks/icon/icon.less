@@ -2,8 +2,8 @@
 	width: 18px;
 	height: 18px;
 	display: inline-block;
-	fill: currentColor;
-	color: currentColor;	
+	fill: fade( @gray_101, 35% );;
+	color: fade( @gray_101, 35% );;	
 }
 
 .btn__clr{
@@ -32,11 +32,7 @@
 
 .icon--extra{
 	width: 23px;
-	height: 5px;
-	fill: fade( @gray_101, 35% );
-	&.icon--active{
-		fill: @black;
-	}	
+	height: 5px;	
 }
 
 .icon--notification{
@@ -87,10 +83,12 @@
 .icon--chevron-right{
 	width: 12.5px;
 	height: 21px;
-	color: fade( @black, 35% );
-	&.icon--active{
-		color: @black;
-	}
+}
+
+.icon--chevron-top,
+.icon--chevron-bottom{
+	width: 22px;
+	height: 14px;
 }
 
 .icon--plus{
@@ -111,10 +109,6 @@
 .icon--star{
 	width: 18px;
 	height: 18px;
-	fill: fade( @gray_101, 35% );
-	&.icon--active{
-		fill: @black;
-	}
 }
 
 .icon--user{
@@ -136,7 +130,6 @@
 	width: 24px;
 	height: 24px;
 	color: transparent;
-	fill: fade( @gray_101, 75% );
 	&.icon--active{
 		fill: transparent;
 		color: @black;
@@ -153,8 +146,53 @@
 	height: 18px;
 }
 
-.icon--close{
+.icon--close,
+.icon--close2{
 	width: 24px;
 	height: 24px;
+}
+
+
+.icon--calendar{
+	width: 22.5px;
+	height: 24px;
+}
+
+.icon--profile-edit{
+	width: 24px;
+	height: 24px;	
+}
+
+.icon--review-add{
+	width: 24px;
+	height: 24px;
+	fill: fade( @gray_101, 35% );
+	&.icon--active{
+		fill: @black;
+	}	
+}
+
+
+.icon--add{
+	width: 24px;
+	height: 24px;
+	color: @black;
+	fill: @white;
+}
+
+.icon--facebook,
+.icon--vk,
+.icon--instagram{
+	width: 32px;
+	height: 32px;
+	fill: @white;		
+	&.icon--active{
+		fill: @white;		
+	}
+}
+
+.icon--disconnected{
+	width: 64px;
+	height: 65px;
 }
 

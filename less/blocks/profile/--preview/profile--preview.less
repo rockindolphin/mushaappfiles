@@ -1,0 +1,51 @@
+.profile--preview{
+	padding: 0 !important;
+	.user{
+		color: @white;
+		position: relative;
+		justify-content: center;
+		max-height: 280px;
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 74.93%;
+		}
+	}
+	.user__avatar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		border: none;
+		margin: 0;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 49.82%;
+			background: linear-gradient(180deg, fade(@black,0%) 0%, fade(@black,75%) 100%);
+		}
+	}
+	.user__details{
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 12px;
+		&>*{
+			margin-bottom: 6px;
+		}
+	}	
+}

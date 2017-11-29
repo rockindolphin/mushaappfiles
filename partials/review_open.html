@@ -22,18 +22,25 @@
 	</header>
 	<main class="main page__main">
 		<div class="main__wrapper scroll--hidden">
-			<div class="page__wrapper">
+			<div class="page__wrapper page__wrapper--md">
 				<section class="section section--wide">	
 					<div class="review review--open">
 						<header class="review__header">
-							<div class="user">
-								<div class="user__avatar">
-									<img src="images/avatar2.jpg" alt="">
+							<div class="profile" ng-click="go('/myprofile')">
+								<div class="user">
+									<div class="user__avatar">
+										<img src="images/avatar3.jpg" alt="" data-bg="true">
+									</div>
+									<div class="user__details">
+										<div class="user__status">
+											Beauty&nbsp;<b>Start</b>
+										</div>
+										<span class="user__name">
+											Марина Ольгина
+										</span>
+									</div>								
 								</div>
-								<div class="user__status">
-									Beauty&nbsp;<b>Start</b>
-								</div>
-							</div>
+							</div>							
 						</header>
 						<main class="review__main">
 							<div class="review__details">
@@ -58,9 +65,33 @@
 									12 июня
 								</div>
 							</div>							
-							<div class="review__content-pic">
-								<img src="images/review_img.jpg" alt="">								
-							</div>						
+							<div class="content__slider" ng-controller="ReviewSliderCtrl">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide slider__slide">
+											<div class="content__pic">
+												<img src="images/review_img.jpg" alt="">											
+											</div>
+										</div>
+										<div class="swiper-slide slider__slide">
+											<div class="content__pic">
+												<img src="images/slide1.jpg" alt="">											
+											</div>
+										</div>
+										<div class="swiper-slide slider__slide">
+											<div class="content__pic">
+												<img src="images/slide2.jpg" alt="">											
+											</div>
+										</div>														
+										<div class="swiper-slide slider__slide">
+											<div class="content__pic">
+												<img src="images/slide3.jpg" alt="">											
+											</div>
+										</div>														
+									</div>
+									<div class="swiper-pagination slider__pagination"></div>
+								</div>																					
+							</div>
 							<p>
 								Огромное спасибо волшебникам из салона. Пришла в плохом настроении, голова болела, ноги еле передвигала: метеозависимость, депрессия и т.д. Благодаря умным и профессиональным рукам мастера просто возродилась! Как феникс из пепла! 
 							</p>
@@ -73,7 +104,7 @@
 						<header class="review__header">
 							<div class="user">
 								<div class="user__avatar">
-									<img src="images/avatar.jpg" alt="">
+									<img src="images/avatar.jpg" alt="" data-bg="true">
 								</div>
 								<div class="user__details">
 									<span class="user__name">

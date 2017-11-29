@@ -2,17 +2,17 @@
 		<div class="page__wrapper">
 			<div class="bar header__bar">
 				<button class="btn__clr" ng-click="go('/menu')">
-					<svg class="icon icon--menu">
+					<svg class="icon icon--active icon--menu">
 						<use xlink:href="images/icons/svg/sprite.svg#menu"></use>
 					</svg>
 				</button>
 				<button class="btn__clr" ng-click="go('/front')">
-					<svg class="icon icon--logo">
+					<svg class="icon icon--active icon--logo">
 						<use xlink:href="images/icons/svg/sprite.svg#logo"></use>
 					</svg>
 				</button>
-				<button class="btn__clr" ng-click="go('/login')">
-					<svg class="icon icon--user">
+				<button class="btn__clr" ng-click="go('/myprofile')">
+					<svg class="icon icon--active icon--user">
 						<use xlink:href="images/icons/svg/sprite.svg#user"></use>
 					</svg>
 				</button>
@@ -51,29 +51,48 @@
 								</div>
 							</div>
 							<div class="swiper-slide slider__slide">
-								<div class="offer">
-									<div class="offer__discount">
-										-15%
-									</div>
-									<div class="offer__pic">
-										<img src="images/slide2.jpg" alt="" data-bg="true">								
-									</div>
-									<div class="offer__desc">
-										<h3 class="offer__title">
-											Бронзовое настроение
-										</h3>
-										<div class="offer__excerpt">
-											<p>
-												10 сеансов турбо-солярия
-											</p>											
+								<div class="booking">
+									<div class="booking__pic">
+										<img src="images/booking_slide.jpg" alt="" data-bg="true">								
+									</div>									
+									<div class="booking__data">
+										<div class="booking__desc">
+											<svg class="icon icon--active icon--calendar">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#calendar"></use>
+											</svg>
+											<span class="booking__date">
+												25 сентября, в 12:30																						
+											</span>
 										</div>
-										<a href class="link" ng-click="go('/booking')">
-											<button class="btn btn__pink">
-												Записаться
-											</button>										
-										</a>
 									</div>
-								</div>
+									<div class="booking__services">
+										<div class="service">
+											<div class="service__content">
+												<div class="service__desc">
+													<div class="service__title">
+														Стрижка мужская классическая
+													</div>
+													<div class="service__excerpt">
+														Оригинальная форма, подчеркивает индивидуальность
+													</div>
+												</div>
+												<div class="service__details">
+													<div class="service__cost">
+														800 Р
+													</div>
+													<div class="service__duration">
+														<span>
+															30 мин
+														</span>
+														<svg class="icon icon--clock">
+															<use xlink:href="images/icons/svg/sprite.svg#clock"></use>
+														</svg>	
+													</div>
+												</div>
+											</div>
+										</div>															
+									</div>
+								</div>								
 							</div>
 							<div class="swiper-slide slider__slide">
 								<div class="offer">
@@ -110,7 +129,7 @@
 							<header class="review__header">
 								<div class="user">
 									<div class="user__avatar">
-										<img src="images/avatar.jpg" alt="">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">
@@ -165,7 +184,7 @@
 							<header class="review__header">
 								<div class="user">
 									<div class="user__avatar">
-										<img src="images/avatar.jpg" alt="">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">
@@ -220,7 +239,7 @@
 							<header class="review__header">
 								<div class="user">
 									<div class="user__avatar">
-										<img src="images/avatar.jpg" alt="">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">

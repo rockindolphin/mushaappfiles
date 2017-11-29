@@ -10,7 +10,7 @@
 					Отзывы
 				</span>
 				<button class="btn__clr" ng-click="go('/review_add')">
-					<svg class="icon icon--plus">
+					<svg class="icon icon--active icon--plus">
 						<use xlink:href="images/icons/svg/sprite.svg#plus"></use>
 					</svg>
 				</button>
@@ -40,9 +40,9 @@
 					<section class="section section--reviews">
 						<div class="review">
 							<header class="review__header">
-								<div class="user">
+								<div class="user" ng-click="go('/userprofile')">
 									<div class="user__avatar">
-										<img src="images/avatar2.jpg" alt="">
+										<img src="images/avatar3.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">
@@ -91,11 +91,17 @@
 								</span>
 							</footer>
 						</div>	
-						<div class="review">
+						<div class="review" ng-click="go('/review_open')">
+							<div class="review__status status--unpublished">
+								<div class="status__bullit"></div>
+								<div class="status__msg">
+									Неопубликовано. Ожидает модерации
+								</div>
+							</div>
 							<header class="review__header">
 								<div class="user">
 									<div class="user__avatar">
-										<img src="images/avatar.jpg" alt="">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">
@@ -144,11 +150,11 @@
 								</span>
 							</footer>
 						</div>	
-						<div class="review">
+						<div class="review" ng-click="go('/review_open')">
 							<header class="review__header">
 								<div class="user">
 									<div class="user__avatar">
-										<img src="images/avatar.jpg" alt="">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
 									</div>
 									<div class="user__details">
 										<span class="user__name">
@@ -187,7 +193,7 @@
 								</div>
 							</header>
 							<main class="review__main">
-								<div class="review__content-pic">
+								<div class="content__pic">
 									<img src="images/review_img.jpg" alt="">								
 								</div>
 								<p>

@@ -66,6 +66,20 @@
 @import 'blocks/calendar/calendar.less';
 @import 'blocks/tab/tab.less';
 @import 'blocks/error/error.less';
+@import 'blocks/booking/booking.less';
+@import 'blocks/status/status.less';
+@import 'blocks/attach/attach.less';
+@import 'blocks/avatar/avatar.less';
+@import 'blocks/profile/profile.less';
+@import 'blocks/action/action.less';
+@import 'blocks/options/options.less';
+@import 'blocks/popup/popup.less';
+@import 'blocks/blog/blog.less';
+@import 'blocks/img/img.less';
+@import 'blocks/holder/holder.less';
+@import 'blocks/map/map.less';
+@import 'blocks/sticky/sticky.less';
+@import 'blocks/content/content.less';
 
 
 
@@ -73,6 +87,7 @@
 /* COLORS */
 @black: #000000;
 @white: #ffffff;
+@red: #ff0000;
 
 @pink_fae: #faead8;
 @pink_fef: #fef2ed;
@@ -80,14 +95,17 @@
 
 @gray_e5e: #e5e5e5;
 @gray_101: #101010;
+@gray_a6a: #a6a6a6;
 
 
 /* VARIABLES */
 @semibold: 600;
 @body-gap: 12;
+@body-gap-md: 16;
+@body-gap-lg: 25;
 @box-rad: 3;
 @btn-rad: 4;
-@review-gap-l: 17;
+@review-gap-l: 16;
 @review-gap-t: 8;
 @catalog-item-w: 164;
 @datepicker-time-w: 84;
@@ -106,7 +124,6 @@ img{
 		object-fit: contain;
 	}
 }
-
 
 h1{
 	font-size: 32px;	
@@ -137,10 +154,18 @@ html {
 
 body {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
+	margin: 0px;
+}
+
+ya-map{
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
 }
 
 .slide-left.ng-enter,

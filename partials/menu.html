@@ -2,7 +2,7 @@
 		<div class="page__wrapper">
 			<div class="bar header__bar">
 				<button class="btn__clr" ng-click="back()">
-					<svg class="icon icon--menu-close">
+					<svg class="icon icon--active icon--menu-close">
 						<use xlink:href="images/icons/svg/sprite.svg#menu-close"></use>
 					</svg>
 				</button>
@@ -11,9 +11,9 @@
 		<div class="header__wrapper scroll--hidden">
 			<div class="page__wrapper">
 				<section class="section--wide">
-					<ul class="menu">
+					<ul class="menu menu--main">
 						<li class="menu__item">
-							<a href class="link" ng-click="go('/front')">
+							<a href class="link" ng-click="go('/about')">
 								О салоне
 							</a>
 						</li>
@@ -22,13 +22,13 @@
 								Отзывы
 							</a>
 						</li>
-						<li class="menu__item item--active">
+						<li class="menu__item item--active" ng-click="go('/beautyclub')">
 							<a href class="link">
 								Клуб Муша
 							</a>
 						</li>
 					</ul>
-					<ul class="menu">
+					<ul class="menu menu--main">
 						<li class="menu__item">
 							<a href class="link" ng-click="go('/booking')">
 								Записаться
@@ -40,7 +40,7 @@
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href class="link">
+							<a href class="link" ng-click="go('/contacts')">
 								Контакты
 							</a>
 						</li>

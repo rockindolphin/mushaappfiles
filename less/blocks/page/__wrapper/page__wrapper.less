@@ -2,7 +2,11 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: @body-gap*1px;
-	padding-right: @body-gap*1px;
+	padding-left: 1px*@body-gap;
+	padding-right: 1px*@body-gap;
 	max-width: 1024px;
 }
+
+@import '--wide/page__wrapper--wide.less';
+@import '--md/page__wrapper--md.less';
+@import '--lg/page__wrapper--lg.less';
