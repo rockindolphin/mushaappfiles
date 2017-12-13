@@ -1,0 +1,92 @@
+	<header class="header page__header">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--chevron-left">
+						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
+					</svg>			
+				</button>
+				<span class="page__title">
+					Запись-онлайн
+				</span>
+				<button class="btn__clr" disabled>
+					<span>&nbsp;</span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="main page__main">
+		<div class="main__wrapper scroll--hidden">
+			<div class="page__wrapper page__wrapper--md">
+				<section class="section section--wide section--booking">
+					<div class="service">
+						<div class="service__check">
+							<input type="checkbox" id="service1" class="input--checkbox" checked style="display: none;">
+							<label for="service1" class="input__checkbox--label">
+								<svg class="icon icon--check">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#check"></use>
+								</svg>																			
+							</label>
+						</div>
+						<div class="service__content">
+							<div class="service__desc">
+								<div class="service__title">
+									Стрижка мужская классическая
+								</div>
+								<div class="service__excerpt">
+									Оригинальная форма, подчеркивает индивидуальность
+								</div>
+							</div>
+							<div class="service__details">
+								<div class="service__cost">
+									800 Р
+								</div>
+								<div class="service__duration">
+									<span>
+										30 мин
+									</span>
+									<svg class="icon icon--clock">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#clock"></use>
+									</svg>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="service__master">
+						<div class="user">
+							<div class="user__avatar">
+								<img src="images/avatar.jpg" alt="" data-bg="true">
+							</div>
+							<div class="user__details">
+								<span class="user__role">
+									Парикмахер
+								</span>									
+								<span class="user__name">
+									Анастасия Воронина
+								</span>
+							</div>
+						</div>					
+						<button class="btn__clr">
+							<svg class="icon icon--chevron-right">
+								<use xlink:href="images/icons/svg/sprite.svg#chevron-right"></use>
+							</svg>			
+						</button>						
+					</div>
+					<div ng-controller="PickadateCtrl" class="picker__container">
+						<input type="date" data-role="date">
+					</div>
+					<div ng-controller="PickadateCtrl" class="picker__container">
+						<input type="time" data-role="time">
+					</div>
+				</section>			
+			</div>
+		</div>
+	</main>
+	<footer class="footer page__footer">
+		<div class="page__wrapper">
+			<button class="btn btn__pink btn__wide" ng-click="go('/booking2')">
+				Записаться
+			</button>				
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
+		</div>
+	</footer>

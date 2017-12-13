@@ -1,0 +1,31 @@
+.profile{
+	width: 100%;
+	padding-left: 1px*@body-gap;
+	padding-right: 1px*@body-gap;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.15);
+	font-size: 16px;	
+	.user{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;		
+	}
+	.user__avatar{
+		width: 64px;
+		height: 64px;
+		margin-right: 12px;
+	}
+	.avatar__wrapper{
+		margin-right: 12px;
+		.user__avatar{
+			margin-right: 0;
+		}
+	}
+}
+
+@import '--edit/profile--edit.less';
+@import '--preview/profile--preview.less';

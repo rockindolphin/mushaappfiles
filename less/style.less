@@ -35,8 +35,13 @@
 /* VENDORS */
 @import 'vendor/normalize.less';
 @import 'vendor/swiper.less';
+<<<<<<< HEAD
 @import 'vendor/jquery.datetimepicker.less';
 @import 'vendor/jquery.mobile-1.4.5.less';
+=======
+@import 'vendor/pickadate.less';
+
+>>>>>>> simple
 
 
 /* BLOCKS */
@@ -64,6 +69,22 @@
 @import 'blocks/scroll/scroll.less';
 @import 'blocks/form/form.less';
 @import 'blocks/calendar/calendar.less';
+@import 'blocks/tab/tab.less';
+@import 'blocks/error/error.less';
+@import 'blocks/booking/booking.less';
+@import 'blocks/status/status.less';
+@import 'blocks/attach/attach.less';
+@import 'blocks/avatar/avatar.less';
+@import 'blocks/profile/profile.less';
+@import 'blocks/action/action.less';
+@import 'blocks/options/options.less';
+@import 'blocks/popup/popup.less';
+@import 'blocks/blog/blog.less';
+@import 'blocks/img/img.less';
+@import 'blocks/holder/holder.less';
+@import 'blocks/map/map.less';
+@import 'blocks/sticky/sticky.less';
+@import 'blocks/content/content.less';
 
 
 
@@ -71,6 +92,7 @@
 /* COLORS */
 @black: #000000;
 @white: #ffffff;
+@red: #ff0000;
 
 @pink_fae: #faead8;
 @pink_fef: #fef2ed;
@@ -78,14 +100,17 @@
 
 @gray_e5e: #e5e5e5;
 @gray_101: #101010;
+@gray_a6a: #a6a6a6;
 
 
 /* VARIABLES */
 @semibold: 600;
 @body-gap: 12;
+@body-gap-md: 16;
+@body-gap-lg: 25;
 @box-rad: 3;
 @btn-rad: 4;
-@review-gap-l: 17;
+@review-gap-l: 16;
 @review-gap-t: 8;
 @catalog-item-w: 164;
 @datepicker-time-w: 84;
@@ -105,7 +130,6 @@ img{
 	}
 }
 
-
 h1{
 	font-size: 32px;	
 }
@@ -124,3 +148,93 @@ h5{
 h6{
 	font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+
+
+html {
+	position: fixed;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	margin: 0px;
+}
+
+ya-map{
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
+}
+
+.slide-left.ng-enter,
+.slide-left.ng-leave,
+.slide-right.ng-enter,
+.slide-right.ng-leave {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background: inherit;
+	transition:  .25s ease-in-out;
+}
+
+
+.slide-left.ng-enter {
+	z-index: 101;
+	transform: translateX(100%);
+}
+
+.slide-left.ng-enter.ng-enter-active {
+	transform: translateX(0);
+}
+
+.slide-left.ng-leave {
+	z-index: 100;
+	transform: translateX(0);
+}
+
+.slide-left.ng-leave.ng-leave-active {
+	transform: translateX(-100%);
+}
+
+.slide-right.ng-enter {
+	z-index: 100;
+	transform: translateX(-100%);
+}
+
+.slide-right.ng-enter.ng-enter-active {
+	transform: translateX(0);
+}
+
+.slide-right.ng-leave {
+	z-index: 101;
+	transform: translateX(0);
+}
+
+.slide-right.ng-leave.ng-leave-active {
+	transform: translateX(100%);
+}
+
+.loading { 
+    background-image: url(../images/loading.gif); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 25px; 
+    min-height: 50px;
+}
+
+.loading > * { 
+    opacity: 0.2; 
+}
+
+.ios { 
+    padding-top: 20px;  
+}
+>>>>>>> simple

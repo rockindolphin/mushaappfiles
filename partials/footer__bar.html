@@ -1,0 +1,39 @@
+			<div class="bar footer__bar">
+				<a href class="link bar__item" ng-click="go('/front')">
+					<span class="icon__wrapper">
+						<svg class="icon icon--notification" ng-class="{ 'icon--active': isPage('/front') }">
+							<use xlink:href="images/icons/svg/sprite.svg#notification"></use>
+						</svg>						
+						<span class="item__badge">
+							<span>2</span>
+						</span>
+					</span>
+					<div>
+						Уведомления
+					</div>
+				</a>			
+				<a href class="link bar__item" ng-click="go('/catalog')">
+					<svg class="icon icon--booking" ng-class="{ 'icon--active': isPage('/catalog') }">
+						<use xlink:href="images/icons/svg/sprite.svg#booking"></use>
+					</svg>					
+					<div>
+						Записаться
+					</div>
+				</a>			
+				<a href class="link bar__item" ng-click="go('/backcall')">
+					<svg class="icon icon--backcall" ng-class="{ 'icon--active': isPage('/backcall') }">
+						<use xlink:href="images/icons/svg/sprite.svg#backcall"></use>
+					</svg>
+					<div>
+						Обратный звонок
+					</div>
+				</a>			
+				<a href class="link bar__item" ng-click="go('/reviews')">
+					<svg class="icon icon--reviews" ng-class="{ 'icon--active': isPage('/reviews') }">
+						<use xlink:href="images/icons/svg/sprite.svg#reviews"></use>
+					</svg>				
+					<div>
+						Отзывы
+					</div>
+				</a>			
+			</div>

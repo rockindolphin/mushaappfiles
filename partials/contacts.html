@@ -1,0 +1,132 @@
+	<header class="header page__header">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--chevron-left">
+						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
+					</svg>
+				</button>
+				<span class="page__title">
+					Контакты
+				</span>
+				<button class="btn__clr" disabled></button>
+			</div>
+		</div>
+	</header>
+	<main class="main page__main" ng-controller="contactsCtrl">
+		<div class="main__wrapper scroll--hidden">
+			<div class="page__wrapper">
+				<section class="section section--wide">	
+					<div class="blog">
+						<div class="blog__incut" style="margin-top: -24px; margin-bottom: 0;padding-bottom: 10px; padding-top: 5px;">
+							<div class="holder blog__holder">
+								<div class="holder__label">
+									Режим работы
+								</div>
+								<div class="holder__content">
+									Каждый день с 10:00 до 21:00 <br>
+									По предварительной записи с 09:00 до 22:00 <br>
+									Осуществляем выезд мастеров на дом
+								</div>
+							</div>							
+						</div>
+						<div class="holder blog__holder" style="font-size: 16px;">
+							<div class="holder__content">
+								+7 (916) 426-88-98							
+							</div>
+						</div>						
+						<div class="holder blog__holder" style="font-size: 16px;">
+							<div class="holder__content">
+								+7 (495) 13-44-007							
+							</div>
+						</div>						
+						<div class="holder blog__holder" style="font-size: 16px;">
+							<div class="holder__content">
+								musha@mushagroup.ru								
+							</div>
+						</div>						
+						<div class="holder blog__holder" style="font-size: 16px;">
+							<div class="holder__content">
+								www.mushagroup.ru								
+							</div>
+						</div>	
+						<div class="holder blog__holder">
+							<div class="holder__label">
+								Мы в социальных сетях
+							</div>
+							<div class="holder__content">
+								<p>
+									<a href="#" class="link">
+										<svg class="icon icon--active icon--facebook">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#facebook"></use>
+										</svg>									
+									</a>
+									<span>&nbsp;&nbsp;</span>
+									<a href="#" class="link">
+										<svg class="icon icon--active icon--vk">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#vk"></use>
+										</svg>									
+									</a>
+									<span>&nbsp;&nbsp;</span>
+									<a href="#" class="link">
+										<svg class="icon icon--active icon--instagram">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#instagram"></use>
+										</svg>									
+									</a>									
+								</p>																
+							</div>
+						</div>	
+						<div class="sticky__wrapper sticky--contacts">
+							<div class="sticky__content" >
+								<div class="holder blog__holder">
+									<div class="holder__label">
+										Адрес
+									</div>
+									<div class="holder__content">
+										<span>
+											ул. Рабочая, д. 2, пом. 4  Истра, Московская область, Россия, 143500
+										</span>
+										<button class="btn__clr" id="scrollMap">
+											<svg class="icon icon--chevron-top">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons/svg/sprite.svg#chevron-top"></use>
+											</svg>
+										</button>								
+									</div>
+								</div>
+								<div class="map map--contacts">
+									<ya-map ya-zoom="18" ya-center="[36.875160, 55.914453]">
+										<ya-geo-object ya-source="geoObjects[0]" ya-options="{preset: 'islands#icon',iconColor: '#0095b6'}"></ya-geo-object>
+									</ya-map>						
+								</div>
+							</div>										
+						</div>										
+					</div>				
+				</section>			
+			</div>
+		</div>
+	</main>
+	<footer class="footer page__footer">
+		<div class="page__wrapper">
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
+		</div>
+	</footer>
+	<div ng-class="{'popup': true, 'popup--context-menu': true, 'popup--open': popup.isVisible }" ng-controller="PopupCtrl">
+		<div class="popup__box">
+			<div class="popup__msg">
+				<p class="popup__title">
+					Отсутствуе соединение <br> с интернетом
+				</p>
+				<svg class="icon icon--active icon--disconnected">
+					<use xlink:href="images/icons/svg/sprite.svg#disconnected"></use>
+				</svg>				
+				<p class="popup__subtitle">
+					Проверьте подключение <br> и повторите попытку
+				</p>
+			</div>
+			<ul class="menu menu--context">
+				<li class="menu__item item--active">
+					Повторить
+				</li>
+			</ul>
+		</div>
+	</div>	

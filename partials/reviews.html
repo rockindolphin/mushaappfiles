@@ -1,0 +1,224 @@
+	<header class="header page__header">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--chevron-left">
+						<use xlink:href="images/icons/svg/sprite.svg#chevron-left"></use>
+					</svg>
+				</button>
+				<span class="page__title">
+					Отзывы
+				</span>
+				<button class="btn__clr" ng-click="go('/review_add')">
+					<svg class="icon icon--active icon--plus">
+						<use xlink:href="images/icons/svg/sprite.svg#plus"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="tabs" ng-controller="TabController">
+				<nav class="tabs__bar">
+					<ul class="tabs__list">
+						<li ng-class="{ 'tab--active': isSet(1) }" class="tabs__tab">
+							<a href ng-click="setTab(1)" class="link">
+								Новые
+							</a>
+						</li>
+						<li ng-class="{ 'tab--active': isSet(2) }" class="tabs__tab">
+							<a href ng-click="setTab(2)" class="link">
+								Популярные
+							</a>
+						</li>
+					</ul>				
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main page__main">
+		<div class="main__wrapper scroll--hidden">
+			<div class="page__wrapper" ng-controller="TabController">
+				<div ng-show="isSet(1)">
+					<section class="section section--reviews">
+						<div class="review">
+							<header class="review__header">
+								<div class="user" ng-click="go('/userprofile')">
+									<div class="user__avatar">
+										<img src="images/avatar3.jpg" alt="" data-bg="true">
+									</div>
+									<div class="user__details">
+										<span class="user__name">
+											Марина О.
+										</span>
+										<div class="review__details">
+											<div class="review__raiting">
+												<svg class="icon icon--active icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+											</div>
+											<div class="review__date">
+												12 июня
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="review__menu">
+									<button class="btn__clr">
+										<svg class="icon icon--extra">
+											<use xlink:href="images/icons/svg/sprite.svg#extra"></use>
+										</svg>																											
+									</button>
+								</div>
+							</header>
+							<main class="review__main">
+								<p>
+									Огромное спасибо волшебникам из салона. Пришла в плохом настроении, голова болела, ноги еле передвигала: метеозависимость, депрессия и т.д. Благодаря умным и профессиональным рукам мастера просто возродилась! Как феникс из пепла!
+								</p>							
+							</main>
+							<footer class="review__footer">
+								<span class="review__count">
+									1 комментарий
+								</span>
+							</footer>
+						</div>	
+						<div class="review" ng-click="go('/review_open')">
+							<div class="review__status status--unpublished">
+								<div class="status__bullit"></div>
+								<div class="status__msg">
+									Неопубликовано. Ожидает модерации
+								</div>
+							</div>
+							<header class="review__header">
+								<div class="user">
+									<div class="user__avatar">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
+									</div>
+									<div class="user__details">
+										<span class="user__name">
+											Lorik27
+										</span>
+										<div class="review__details">
+											<div class="review__raiting">
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+											</div>
+											<div class="review__date">
+												12 июня
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="review__menu">
+									<button class="btn__clr">
+										<svg class="icon icon--extra">
+											<use xlink:href="images/icons/svg/sprite.svg#extra"></use>
+										</svg>																											
+									</button>
+								</div>
+							</header>
+							<main class="review__main">
+								<p>
+									Спасибо большое мастеру Наталии. Очень понравилась работа (наращивание ногтей)! Приемлемые цены, отличное отношение к клиентам. Качественно и добросовестно.
+								</p>							
+							</main>
+							<footer class="review__footer">
+								<span class="review__count">
+									4 комментария
+								</span>
+							</footer>
+						</div>	
+						<div class="review" ng-click="go('/review_open')">
+							<header class="review__header">
+								<div class="user">
+									<div class="user__avatar">
+										<img src="images/avatar.jpg" alt="" data-bg="true">
+									</div>
+									<div class="user__details">
+										<span class="user__name">
+											Lorik27
+										</span>
+										<div class="review__details">
+											<div class="review__raiting">
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--active  icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+												<svg class="icon icon--star">
+													<use xlink:href="images/icons/svg/sprite.svg#star"></use>
+												</svg>											
+											</div>
+											<div class="review__date">
+												12 июня
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="review__menu">
+									<button class="btn__clr">
+										<svg class="icon icon--extra">
+											<use xlink:href="images/icons/svg/sprite.svg#extra"></use>
+										</svg>																											
+									</button>
+								</div>
+							</header>
+							<main class="review__main">
+								<div class="content__pic">
+									<img src="images/review_img.jpg" alt="">								
+								</div>
+								<p>
+									Спасибо большое мастеру Наталии. Очень понравилась работа (наращивание ногтей)! Приемлемые цены, отличное отношение к клиентам. Качественно и добросовестно.
+								</p>							
+							</main>
+							<footer class="review__footer">
+								<span class="review__count">
+									4 комментария
+								</span>
+							</footer>
+						</div>													
+					</section>			
+				</div>
+				<div ng-show="isSet(2)">
+					tab2
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer page__footer">
+		<div class="page__wrapper">
+			<button class="btn btn__pink btn__wide" ng-click="go('/review_add')">
+				Добавить отзыв
+			</button>			
+			<ng-include src="'partials/footer__bar.html'"></ng-include>
+		</div>
+	</footer>	

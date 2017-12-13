@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ru" ng-app="myApp">
 <head>
 	<meta charset="utf-8">
+<<<<<<< HEAD
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Index</title>
 	<link rel="stylesheet" href="css/style.css">
@@ -350,5 +351,33 @@
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+=======
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link href="css/style.css?v=1.0.3" rel="stylesheet">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+
+	<script src="js/lib/angular.js"></script>
+	<script src="js/lib/angular-touch.js"></script>
+	<script src="js/lib/angular-resource.js"></script>
+	<script src="js/lib/angular-animate.js"></script>
+	<script src="js/lib/angular-route.js"></script>
+
+	<script src="js/lib/ya-map-2.1.min.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+</head>
+
+<body ng-controller="MainCtrl" ng-swipe-left="forward()" ng-swipe-right="back()">
+	<div ng-view ng-class="slide" class="page"></div>
+>>>>>>> simple
 </body>
 </html>

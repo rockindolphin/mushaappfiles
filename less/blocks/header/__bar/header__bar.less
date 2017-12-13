@@ -1,3 +1,23 @@
 .header__bar{
-	
+	.icon--user{
+		width: 16.5px;
+		height: 24px;
+	}
+	&>.btn__clr{
+		position: relative;
+		&:first-of-type{
+			left: -1px*@body-gap;
+			padding-left: 1px*@body-gap;
+			&>*{
+				margin-left: initial;	
+			}
+		}
+		&:last-of-type{
+			right: -1px*@body-gap;
+			padding-right: 1px*@body-gap;
+			&>*{
+				margin-right: initial;	
+			}
+		}
+	}
 }

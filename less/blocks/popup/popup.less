@@ -1,0 +1,21 @@
+.popup{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: fade(@black,25%);
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 1px*@body-gap;	
+}
+
+@import '__box/popup__box.less';
+@import '__msg/popup__msg.less';
+@import '__title/popup__title.less';
+@import '__subtitle/popup__subtitle.less';
+
+@import '--open/popup--open.less';

@@ -1,0 +1,164 @@
+<<<<<<< HEAD:html/menu.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page" data-role="page" id="menu">
+		<header class="header page__header header--open" data-role="header">
+			<div class="page__wrapper">
+				<div class="bar header__bar">
+					<a href="#" class="link" data-rel="back">
+						<svg class="icon icon--menu-close">
+							<use xlink:href="images/icons/svg/sprite.svg#menu-close"></use>
+						</svg>					
+					</a>
+				</div>
+			</div>
+			<div class="header__wrapper scroll--hidden">
+				<div class="page__wrapper">
+					<section class="section--wide">
+						<ul class="menu">
+							<li class="menu__item">
+								<a href="index.html" class="link">
+									О салоне
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="reviews.html" class="link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu__item item--active">
+								<a href="#" class="link">
+									Клуб Муша
+								</a>
+							</li>
+						</ul>
+						<ul class="menu">
+							<li class="menu__item">
+								<a href="booking.html" class="link">
+									Записаться
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="backcall.html" class="link">
+									Обратный звонок
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+=======
+	<header class="header page__header header--open">
+		<div class="page__wrapper">
+			<div class="bar header__bar">
+				<button class="btn__clr" ng-click="back()">
+					<svg class="icon icon--active icon--menu-close">
+						<use xlink:href="images/icons/svg/sprite.svg#menu-close"></use>
+					</svg>
+				</button>
+>>>>>>> simple:partials/menu.html
+			</div>
+		</header>
+		<main class="main page__main main--index ui-content" style="display: none;"></main>
+		<footer class="footer page__footer" data-role="footer">
+			<div class="page__wrapper">
+<<<<<<< HEAD:html/menu.html
+				<div class="bar footer__bar">
+					<a href="#" class="link bar__item">
+						<span class="icon__wrapper">
+							<svg class="icon icon--notification">
+								<use xlink:href="images/icons/svg/sprite.svg#notification"></use>
+							</svg>						
+							<span class="item__badge">
+								2
+							</span>
+						</span>
+						<span>
+							Уведомления
+						</span>
+					</a>			
+					<a href="catalog.html" class="link bar__item">
+						<svg class="icon icon--booking">
+							<use xlink:href="images/icons/svg/sprite.svg#booking"></use>
+						</svg>					
+						<span>
+							Записаться
+						</span>
+					</a>			
+					<a href="backcall.html" class="link bar__item">
+						<svg class="icon icon--backcall">
+							<use xlink:href="images/icons/svg/sprite.svg#backcall"></use>
+						</svg>
+						<span>
+							Обратный звонок
+						</span>
+					</a>			
+					<a href="reviews.html" class="link bar__item">
+						<svg class="icon icon--reviews">
+							<use xlink:href="images/icons/svg/sprite.svg#reviews"></use>
+						</svg>				
+						<span>
+							Отзывы
+						</span>
+					</a>			
+				</div>				
+			</div>
+		</footer>	
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
+=======
+				<section class="section--wide">
+					<ul class="menu menu--main">
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/about')">
+								О салоне
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/reviews')">
+								Отзывы
+							</a>
+						</li>
+						<li class="menu__item item--active" ng-click="go('/beautyclub')">
+							<a href class="link">
+								Клуб Муша
+							</a>
+						</li>
+					</ul>
+					<ul class="menu menu--main">
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/booking')">
+								Записаться
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/backcall')">
+								Обратный звонок
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href class="link" ng-click="go('/contacts')">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</header>
+>>>>>>> simple:partials/menu.html

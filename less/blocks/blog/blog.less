@@ -1,0 +1,41 @@
+.blog{
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: @white;
+	padding-left: 1px*@body-gap;
+	padding-right: 1px*@body-gap;
+	font-size: 14px;
+	min-height: 100vh;
+	h1,h2,h3,h4,h5,h6{
+		font-family: PlayfairDisplay;
+		font-weight: normal;
+	}
+	&>img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+	&>.offer{
+		box-shadow: none;
+		overflow: initial;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding-top: 9px;
+		padding-right: 5px;
+		.offer__discount{
+			top: -9px;
+			right: -5px;
+		}
+	}
+	sub{
+		font-size: 11px;
+	}
+	p{
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+}
+
+@import '__incut/blog__incut.less';
+@import '__holder/blog__holder.less';

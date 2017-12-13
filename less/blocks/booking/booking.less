@@ -1,0 +1,24 @@
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: @white;
+    position: relative; 
+    padding-left: 1px*@body-gap;
+
+    border-radius: 1px*@box-rad;
+    overflow: hidden;
+    .service{
+    	padding-left: 0;
+    }
+}
+
+@import '__pic/booking__pic.less';
+@import '__desc/booking__desc.less';
+@import '__date/booking__date.less';
+@import '__data/booking__data.less';
+@import '__services/booking__services.less';
+@import '__actions/booking__actions.less';
+
+@import '--disabled/booking--disabled.less';
